@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_up"
+        android:src="@drawable/new_signup"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:id="@+id/sign_in_text"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:paddingTop="46dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_in_text"
+        android:paddingTop="36dp"
+        android:src="@drawable/mybizness"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/input_field_margin"
+        android:textSize="18sp"
+        android:id="@+id/username_signin"
+        android:hint="@string/username"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_centerInParent="true"
+        android:background="@drawable/edittext_outline"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:paddingLeft="@dimen/input_field_margin"
+        android:id="@+id/password_signin"
+        android:textSize="18sp"
+        android:hint="@string/password"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_below="@id/username_signin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext_outline"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign_in_button"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/signin_button"
+            android:background="@android:color/transparent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/input_field_margin"
+            android:onClick="OnLogin"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/agreement"
+            android:text="@string/agreement"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/sign_in_button"
+            android:layout_alignStart="@+id/sign_in_button" />
+
+        <TextView
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/terms_of_service"
+            android:layout_toRightOf="@id/agreement"
+            android:layout_alignParentBottom="true"
+            android:text="@string/terms_of_service"
+            android:textColor="@color/next_blue"/>
+
+
+</RelativeLayout>

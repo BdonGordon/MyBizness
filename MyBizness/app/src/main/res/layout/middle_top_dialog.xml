@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/frame"
+    android:layout_centerInParent="true"
+    android:background="@drawable/path_1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tutorial_text_mt"
+        android:textSize="14sp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:id="@+id/next_ok"
+        android:text="@string/tutorial_next"
+        android:textColor="@color/next_blue"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="180dp"/>
+</FrameLayout>
